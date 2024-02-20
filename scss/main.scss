@@ -17,25 +17,44 @@ html{
     position: relative;
     min-height:100%;
 }
-main{
-    margin-top:150px;
-    margin-bottom:250px;
+#main-page{
+    position: absolute;
+    width:100%;    
+    margin-bottom:250px;    
 }
+.hauteurmain{
+    position: relative;
+    height:100%;
+    width: 100%;
+}
+.temoi{
+    height:400px;
+    margin-top:0px;
+    color: black;
+    justify-content: center;   
+}
+.nosvo{
+    height:300px;
+    margin-bottom:0px;
+    color: white;
+    justify-content: center;
+}
+
 footer.footer{
     padding: 15px;
-    position: absolute;
+    position: fixed;
     bottom:0%;
     width: 100%;
 }
-.hero-scene{
-    position: relative;
+.principal{
+    position: relative;    
     &::before{
         content:"";
         position: absolute;
         top:0;
         left:0;
         width:100%;
-        height:100%;
+        bottom: 150px;       
         background-image: url(../../images/HauteurCornicheToulouse.jpg);
         background-size: cover;
         filter: brightness(0.3);
@@ -45,12 +64,61 @@ footer.footer{
         //Positionner les éléments devant le ::before
         position:relative;
     }
-
-    .hero-scene-content{
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .principaldroit{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        bottom: 150px;       
+        background-image: url(../../images/HauteurCornicheToulouse.jpg);
+        background-size: cover;
+        filter: brightness(0.3);
+    }
+    .messageaccueil{
+        position:relative;
+        height: 60px;
+        color: white;
+        text-align: center;
+    }
+    .specia{
+        height: 235px;        
+    }
+    .sectiontexte{
+        position: relative;
+        margin-top: 0px;
+        padding-right: 0px;
+        margin-right: 0px;        
+        text-align: start;
+        justify-content: center;           
+    }
+    .carro{
+        position: relative;
+        height: 200px;
+        padding: 0%;
+        background-image: url(../images/GP_NBprojecteur.jpg);
+    }
+    .meca{
+        position: relative;        
+        height: 200px;
+        padding: 0%;
+        background-image: url(../images/GP_NBcourroieaccessoiresmote.jpg);
+    }
+    .maint{
+        position: relative;
+        height: 200px;
+        padding: 0%;
+        background-image: url(../images/JaguarTypeE.jpg);
+    }
+    .posicone{
+        position: absolute;
+        height: 200px;
+        width: 100%;
+        padding: 0px;
+        margin-left: -25px;
+        align-items: stretch;
         justify-content: center;
     }
+    .tailleicone{
+        font-size: 40px;    
+    } 
 }
